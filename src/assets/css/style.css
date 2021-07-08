@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+#app {
+  font-family: 'Maven Pro', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  margin: 1rem;
+}
+body {
+  background: #141725;
+  --border-radius: 5px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+div {
+  margin: 0;
+  color: #f0f0f0;
+}
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.main-card {
+  background: #0a0f2f;
+  padding: 1rem;
+  border-radius: var(--border-radius);
+}
+.t-bg {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: var(--border-radius);
+}
+.generated-pass {
+  overflow-wrap: break-word;
+  padding-left: 1rem ;
+  padding-right: 1rem ;
+}
+.copy-btn {
+  position: absolute;
+  right: 1px;
+  bottom: 1px;
+  border: 1px solid white;
+  border-bottom-right-radius: var(--border-radius);
+  font-size: 12px;
+  padding: 4px 8px;
+  cursor: pointer;
+}
+.copy-btn:hover {
+  background: rgb(250 250 250 / 22%);
+}
+.slider {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 5px;
+  background: rgb(255 255 255 / 20%);
+  outline: none;
+  opacity: 0.8;
+  transition: opacity 0.2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #fff; 
+  cursor: pointer; 
+}
+
+.slider::-moz-range-thumb {
+  width: 25px; 
+  height: 25px; 
+  border-radius: 50%;
+  background: #fff;
+  cursor: pointer;
+}
+.custom-cb input[type="checkbox"] {
+  display: none;
+}
+.custom-cb label {
+  display: inline-block;
+  width: 64px;
+  height: 32px;
+  border-radius: 30px;
+  background: #6e6f82;
+  position: relative;
+}
+.custom-cb input[type="checkbox"]:checked + label {
+  background: #5e6bdb;
+}
+.custom-cb label::before {
+  content: "";
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #fff;
+  display: inline-block;
+  transition: all .5s;
+  transform: translate(-15px, 4px);
+}
+
+.custom-cb input[type="checkbox"]:checked + label::before {
+  transform: translate(15px, 4px);
+}
+
+.btn {
+  cursor: pointer;
+  width: 100%;
+  appearance: none;
+  background: #1d5eff;
+  border: none;
+  border-radius: var(--border-radius);
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  color: #e8e8e8;
+  padding: 10px;
+  font-family: 'Maven Pro';
+  transition: all .3s ease-in-out;
+}
+.btn:hover {
+  background: #1154ff;
+}
+.btn:active {
+  background: #0e4ceb;
+  transform: translateY(4px)
+}
+/* Helpers */
+.relative {
+  position: relative;
+}
+.absolute {
+  position: absolute;
+}
+.pointer {
+  cursor: pointer;
+}
+.d-flex {
+  display: flex;
+}
+.flex-grow-1 {
+  flex-grow: 1;
+}
+.align-self-center {
+  align-self: center;
+}
+.align-center {
+  align-items: center;
+}
+.justify-center {
+  justify-content: center;
+}
+.text-center {
+  text-align: center;
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+.py-4 {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+.px-4 {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.py-5 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.ml-4 {
+  margin-left: 16px;
+}
+.mr-4 {
+  margin-right: 16px;
+}
+.mb-1 {
+  margin-bottom: 4px;
+}
+
+.mb-2 {
+  margin-bottom: 8px;
+}
+
+.mb-3 {
+  margin-bottom: 12px;
+}
+
+.mb-4 {
+  margin-bottom: 16px;
+}
+
+.mb-5 {
+  margin-bottom: 20px;
+}
+
+.mb-6 {
+  margin-bottom: 24px;
+}
+
+.mb-7 {
+  margin-bottom: 28px;
+}
+
+.mb-8 {
+  margin-bottom: 32px;
+}
+
+.mb-9 {
+  margin-bottom: 36px;
+}
+
+.mb-10 {
+  margin-bottom: 40px;
+}
+
+.mb-11 {
+  margin-bottom: 44px;
+}
+
+.mb-12 {
+  margin-bottom: 48px;
+}
+
+.mb-13 {
+  margin-bottom: 52px;
+}
+
+.mb-14 {
+  margin-bottom: 56px;
+}
+
+.mb-15 {
+  margin-bottom: 60px;
+}
+
+.mb-16 {
+  margin-bottom: 64px;
+}
+
+/* Responsive */
+@media screen and (min-width: 576px) {
+    .container {
+      max-width: 540px;
+    }
+    .btn {
+      max-width: 320px;
+    }
+}
