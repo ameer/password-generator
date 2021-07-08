@@ -1,24 +1,9 @@
 # password-generator
 
-## Project setup
-```
-npm install
-```
+## About
+I created this project to practice and increase my FrontEnd skills as well as testing the Vue-Cli features. This also can be used as a PWA.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## Pure CSS
+No framework was used for this project. Absolutely pure CSS!
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+# Made possible with keyboard and 🚬
